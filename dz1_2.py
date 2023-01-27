@@ -10,3 +10,6 @@ while num > 0:
     sum += num % 10
     num = num // 10
 print(sum)
+
+#sum = sum(int(i) for i in str(num))
+#print(sum)
