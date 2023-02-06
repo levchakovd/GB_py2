@@ -16,5 +16,3 @@ else:
     Y = int((S - math.sqrt(S**2 - 4*P)) / 2)
 
 print(f"X: {X}, Y: {Y}")
-
-
