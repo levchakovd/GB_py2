@@ -27,5 +27,5 @@ start = time.time()
 result = de_morgan(predicates)
 end = time.time()
 
-print("Time elapsed:", end - start, "seconds")
-print("The statement ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z is", result)
+print("Затрачено времени:", end - start, "секунд")
+print("Утверждение ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z is", result)
