@@ -13,5 +13,3 @@ print(coins)
 count = min(coins.count(0), coins.count(1))
 
 print("Минимальное кол-во монеток, которые нужно перевернуть: ", count)
-
-
