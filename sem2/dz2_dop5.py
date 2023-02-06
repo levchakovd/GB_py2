@@ -23,5 +23,3 @@ for i in range(N):
     point2.append(y)
 
 print("Расстояние между двумя точками равно: ", distance(point1, point2, N))
-
-
