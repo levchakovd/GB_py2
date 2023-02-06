@@ -5,3 +5,21 @@
 # [1, 5, 2, 3, 4, 6, 1, 7] => [1, 7]
 # [1, 5, 2, 3, 4, 1, 7, 8 , 15 , 1 ] => [1, 5]
 # [1, 5, 3, 4, 1, 7, 8 , 15 , 1 ] => [3, 5]
+
+
+import random
+
+n = int(input("Хотя бы размер списка зададим: "))
+sp = [random.randint(1, 15) for i in range(n)]
+
+print(sp)
+
+for i in range(n-1):
+    temp = 0
+    if sp[i+1]-sp[i] > temp:
+        temp = sp[i+1]-sp[i]
+        newsp = [sp[i],sp[i+1]]
+    else:
+        i+=1
+
+print(newsp)
