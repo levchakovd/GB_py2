@@ -33,13 +33,3 @@ for i in range(1, k+1):
     fibo.insert(0,negofibonacci(i))
 
 print(fibo)
-
-
-
-
-
-
-
-
-
-
