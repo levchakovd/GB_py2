@@ -13,3 +13,14 @@
 # заданной во входном файле грядки.
 # 4 -> 1 2 3 4
 # 9
+n = int(input("Введите количество грядок: "))
+cher = [int(input(f"Введите количество ягод на {i+1} грядке: ")) for i in range(n)]
+
+print(cher)
+summax = 0
+for i in range(n):
+    sum3 = cher[i]+cher[i-1]+cher[i-2]
+    if sum3 > summax:
+        summax = sum3
+
+print(summax)
