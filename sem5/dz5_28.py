@@ -4,3 +4,13 @@
 # Также нельзя использовать циклы.
 # 2 2
 # 4
+
+def sum(a,b):
+    for i in range(b):
+        a +=1
+    return a
+
+a = int(input("a: "))
+b = int(input("b: "))
+
+print(sum(a,b))
