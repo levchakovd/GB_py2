@@ -35,6 +35,11 @@
 # num = int(input(": "))
 # print(square_digits(num))    
 
-def friend(x):
-    return [friend for friend in x if len(friend) == 4]
+# def friend(x):
+#     return [friend for friend in x if len(friend) == 4]
+
+
+# def longest(s1, s2):
+#     s = s1 + s2
+#     return ''.join(sorted(set(s)))
 
