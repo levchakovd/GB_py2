@@ -42,6 +42,22 @@ for i in range(int(m*n/2)):
 
 print(f"количество иттераций = {count}")
 
+result = []
+for i in range(n):
+    res = []
+    for j in range(m):
+        idx = i*m+j
+        if idx < len(flat_matrix):
+            res.append(flat_matrix[idx])
+        else:
+            res.append(None)
+    result.append(res)
+
 for i in range(n):
     for j in range(m):
-        print(flat_matrix[i][j], end = " ")
+        print(result[i][j], end=' ')
+    print()
+
+
+
+
