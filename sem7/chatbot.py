@@ -26,6 +26,8 @@ while True:
     elif command == "/add":
         t = input("Введите название команды: ")
         teams.append(t)
+    elif command == "/delete":
+        d = input("Введите название команды, которуе нужно удалить")
     elif command == "/save":
         save()
     else:
