@@ -35,5 +35,9 @@ while True:
             print("такой команды не было")    
     elif command == "/save":
         save()
+    elif command == "/load":
+        with open("teams.json","r",encoding="utf-8") as tm:
+           teams = json.load(tm)
+        print("Команды загрузил")
     else:
         print("я хз что тебе надо, не умею это")
