@@ -21,19 +21,19 @@ def save_phonebook(phonebook):
         json.dump(phonebook,f)
 
 def add_contact():
-    values = easygui.multenterbox("Введите данные контакта", fields=["Имя", "Фамилия", "Отчество", "Телефон"])
+    values = easygui.multenterbox("Введите данные контакта", fields=["Фамилия", "Имя", "Отчество", "Телефон"])
     while True:
         if values is None:
             break
         elif "" in values:
             easygui.msgbox("Необходимо заполнить все поля.")
-            values = easygui.multenterbox("Введите данные контакта", fields=["Имя", "Фамилия", "Отчество", "Телефон"])
+            values = easygui.multenterbox("Введите данные контакта", fields=["Фамилия", "Имя", "Отчество", "Телефон"])
         else:
             break
         
     if values is not None:
         name = f"{values[0]} {values[1]} {values[2]}"
-        phonebook[name] = {"Имя": values[0], "Фамилия": values[1], "Отчество": values[2], "Телефон": values[3]}
+        phonebook[name] = {"Фамилия": values[0], "Имя": values[1], "Отчество": values[2], "Телефон": values[3]}
         save_phonebook(phonebook)
         easygui.msgbox(f"Контакт {name} успешно добавлен.")
 
@@ -115,7 +115,7 @@ def redact_contact():
         return
 
     # Предлагаем пользователю выбрать, какое значение нужно изменить
-    choices = ["Имя", "Фамилия", "Отчество", "Телефон"]
+    choices = ["Фамилия", "Имя", "Отчество", "Телефон"]
     chosen_field = easygui.buttonbox("Выберите, какое значение нужно изменить:", choices=choices)
 
     # Получаем старое значение выбранного поля контакта
