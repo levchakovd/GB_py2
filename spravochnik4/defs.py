@@ -1,7 +1,8 @@
 import easygui
 import json
+import os
 
-FILENAME = "baza4.json"
+FILENAME = os.path.join(os.path.dirname(__file__), 'baza4.json')
 
 try:
     with open(FILENAME, 'r') as f:
