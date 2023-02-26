@@ -1,7 +1,8 @@
 from defs import *
 import easygui
+import os
 
-FILENAME = "baza4.json"
+FILENAME = os.path.join(os.path.dirname(__file__), 'baza4.json')
     
 while True:
     # Загрузка данных из файла
